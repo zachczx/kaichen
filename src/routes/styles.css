@@ -1,0 +1,45 @@
+:root {
+  font-family: 'Indie Flower', cursive;
+}
+
+section {
+  min-height: 100vh;
+
+}
+
+.hide {
+  opacity: 0;
+  filter: blur(30px);
+  transition: ease-out 1s;
+  transition-delay:0ms;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0%); 
+  background-color: rgba(0, 0, 0, 0.4);
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+section:nth-child(2) .show {
+  background-color: rgba(255, 0, 0, 0.3);
+}
+
+section:nth-child(3) .show {
+  background-color: rgba(251, 255, 18, 0.915);
+  background: radial-gradient(circle at 96% 92%, rgba(255, 255, 255, 0.6) 0%, rgba(65, 65, 0, 1) 100%);
+}
+
+section:nth-child(4) .show {
+  background-color: rgba(235, 0, 223, 0.3);
+}
+
+section:nth-child(5) .show {
+  background-color: rgba(27, 165, 161, 0.3);
+}
+
+section:nth-child(6) .show {
+  background-color: rgba(50, 205, 50, 0.3);
+}

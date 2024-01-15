@@ -1,0 +1,98 @@
+<script>
+//images
+import venom from '$lib/assets/_16f0c0d3-4025-4397-bf59-2f3d26f17891.webp';
+import spiderman from '$lib/assets/_4f970765-bfa3-471a-9c40-b2fb8d3e5cb1.webp';
+import toycars from '$lib/assets/nick-xcRt6KM5s04-unsplash_full.webp';
+import classphoto from '$lib/assets/photo-output_full.webp';
+import spiderwebbg from '$lib/assets/matthieu-joannon-QoX88h9Pzpw-unsplash.jpg';
+import spidermanicon from '$lib/assets/83074-spiderman-venom-youtube-symmetry-area-free-hq-image.png';
+import venomicon from '$lib/assets/pngwing.com.png';
+import milesicon from '$lib/assets/mileshead.png';
+import { onMount } from 'svelte';
+import HeartFill from "svelte-bootstrap-icons/lib/HeartFill.svelte";
+
+//---------------------------
+
+onMount(() => {
+    let observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            console.log(entry)
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show')               
+            } else {
+                entry.target.classList.remove('show')
+            }
+        })
+    })
+const hiddenElements = document.querySelectorAll('.hide')
+hiddenElements.forEach((el) => observer.observe(el))
+})
+
+let spiderhead = 0
+function clickSpidey() {
+    spiderhead += 1
+}
+
+</script>
+
+<section style="background-image:url('{classphoto}'); background-size: cover; background-position: 30%;" class="bg-yellow-300">
+<div class="hide grid content-center justify-items-center text-white">
+<h1>Hello! This is Kai.</h1>
+<p class="text-3xl">Kai's just a kid.</p>
+</div>
+</section>
+
+<section style="background-image:url('{spiderwebbg}'); background-size: cover; background-position: 70%;" class="bg-red-500">
+    <div class="hide text-white grid content-end px-8">
+        <h2>Kai is into Spiderman.</h2>
+        <div class="text-3xl flex items-center">Kai likes Spiderman (Peter).<a href="#" on:click={clickSpidey}><img alt='Spidey' src={spidermanicon} width='80' height='80' class="self-center ms-4"></a> 
+            <span class="text-red-500 flex">
+                {#if spiderhead > 0 && spiderhead <= 10}
+                x{spiderhead} <span class="self-center ms-2"><HeartFill width={20} height={20} /></span>
+                {:else if 10 < spiderhead && spiderhead <= 20 }
+                x{spiderhead}<span class="flex self-center ms-2"><HeartFill width={20} height={20} /></span><span class="flex self-start"><HeartFill width={20} height={20} /></span><span class="flex self-end"><HeartFill width={30} height={30} /></span>
+                {:else if 20 < spiderhead && spiderhead <= 30}
+                x{spiderhead}<span class="flex self-center ms-2"><HeartFill width={20} height={20} /></span><span class="flex self-start"><HeartFill width={20} height={20} /></span><span class="flex self-end"><HeartFill width={30} height={30} /></span><span class="flex self-start"><HeartFill width={40} height={40} /></span><span class="flex self-center ms-2"><HeartFill width={35} height={35} /></span>
+                {:else if spiderhead > 30}
+                x{spiderhead}<span class="flex self-center ms-2"><HeartFill width={20} height={20} /></span><span class="flex self-start"><HeartFill width={20} height={20} /></span><span class="flex self-end"><HeartFill width={30} height={30} /></span><span class="flex self-start"><HeartFill width={40} height={40} /></span><span class="flex self-center ms-2"><HeartFill width={35} height={35} /></span><span class="flex self-start"><HeartFill width={60} height={60} /></span><span class="flex self-end"><HeartFill width={45} height={45}/></span>
+                {/if}
+            </span>
+        </div>
+        <div class="text-3xl flex items-center">
+            He likes Venom.<img alt='Spidey' src={venomicon} width='80' height='80' class="self-center ms-4">
+        </div>
+        <div class="text-3xl flex items-center">
+            He kind of likes Miles. <img alt='Spidey' src={milesicon} width='80' height='80' class="self-center ms-4">
+        </div>
+        <div class="flex place-content-end">
+            <img alt="Friendly neighborhood spiderman" src={spiderman} width="400" height="400" loading="lazy">
+            <img alt="Venom rawr" src={venom} width="400" height="400" loading="lazy">
+        </div>
+    </div>
+</section>
+
+<section style="background-image:url('{toycars}'); background-size: cover;">
+    <div class="hide grid content-center justify-items-center text-white">
+        <h2 class="text-white">Kai's favorite toys are vehicles.</h2>
+        <p class="text-3xl text-white">Cars. Police cars. Fire trucks. Excavators. Buses.</p>
+    </div>
+</section>
+
+<section class="bg-orange-300">
+<div class="hide">
+<h2>Kai eats junk food sometimes.</h2>
+<p class="text-3xl">Kai enjoys ice cream, juices, yakult.</p>
+</section>
+
+<section class="bg-green-700">
+<div class="hide">
+<h2>Kai enjoys fruit.</h2>
+<p class="text-3xl">Grapes. Apples. Strawberries. Blueberries. Watermelons. Oranges. Pineapples.</p>
+</section>
+
+<section class="bg-sky-500">
+<div class="hide">
+<h2>Kai loves his food.</h2>
+<p class="text-3xl">Kai loves noodles. Soup cai cai. sausage. fishball. tomatoes. mushrooms, fungus, squid. He has also grown to like meat.</p>
+</div>
+</section>
