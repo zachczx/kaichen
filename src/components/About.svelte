@@ -57,7 +57,7 @@ function clickTraffic(color) {
 <section style="background-image:url('{spiderwebbg}'); background-size: cover; background-position: 70%;" class="bg-red-500">
     <div class="hide text-white grid content-end px-8">
         <h2>Kai is into Spiderman.</h2>
-        <div class="text-3xl flex items-center">Kai likes Spiderman (Peter).<a href="#" on:click={clickSpidey}><img alt='Spidey' src={spidermanicon} width='80' height='80' class="self-center ms-4"></a> 
+        <div class="text-3xl flex items-center">Kai likes Spiderman (Peter).<button on:click={clickSpidey}><img alt='Spidey' src={spidermanicon} width='80' height='80' class="self-center ms-4"></button> 
             <span class="text-red-500 flex">
                 {#if spiderhead > 0 && spiderhead <= 10}
                 x{spiderhead} <span class="self-center ms-2"><HeartFill width={20} height={20} /></span>
