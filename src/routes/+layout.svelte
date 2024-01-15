@@ -1,6 +1,7 @@
 <script>
   import "../tailwind.css"; 
   import "./styles.css";
+  export const prerender = true;
 </script>
 
 <svelte:head>
