@@ -18,18 +18,18 @@ section {
   opacity: 1;
   filter: blur(0);
   transform: translateX(0%); 
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 9, 78, 0.404);
   min-height: 100vh;
   min-width: 100vw;
 }
 
 section:nth-child(2) .show {
-  background-color: rgba(255, 0, 0, 0.3);
+  background-color: rgba(0, 30, 255, 0.372);
 }
 
 section:nth-child(3) .show {
   background-color: rgba(251, 255, 18, 0.915);
-  background: radial-gradient(circle at 96% 92%, rgba(255, 255, 255, 0.6) 0%, rgba(65, 65, 0, 1) 100%);
+  background: radial-gradient(circle at 96% 92%, rgba(0, 24, 89, 0.385) 0%, rgba(0, 24, 89, 1) 100%);
 }
 
 section:nth-child(4) .show {

@@ -8,7 +8,13 @@ import spiderwebbg from '$lib/assets/matthieu-joannon-QoX88h9Pzpw-unsplash_full.
 import spidermanicon from '$lib/assets/83074-spiderman-venom-youtube-symmetry-area-free-hq-image_resized.webp';
 import venomicon from '$lib/assets/pngwing.com_resized.webp';
 import milesicon from '$lib/assets/mileshead_resized.webp';
+
+import Traffic from './Traffic.svelte';
+import CircleFill from "svelte-bootstrap-icons/lib/CircleFill.svelte";
+
 import { onMount } from 'svelte';
+//bootstrap icons
+
 import HeartFill from "svelte-bootstrap-icons/lib/HeartFill.svelte";
 
 //---------------------------
@@ -31,6 +37,12 @@ hiddenElements.forEach((el) => observer.observe(el))
 let spiderhead = 0
 function clickSpidey() {
     spiderhead += 1
+}
+
+$: traffic = ''
+function clickTraffic(color) {
+    traffic = color;
+    console.log(color);
 }
 
 </script>
@@ -72,9 +84,13 @@ function clickSpidey() {
 </section>
 
 <section style="background-image:url('{toycars}'); background-size: cover;">
-    <div class="hide grid content-center justify-items-center text-white">
-        <h2 class="text-white">Kai's favorite toys are vehicles.</h2>
-        <p class="text-3xl text-white">Cars. Police cars. Fire trucks. Excavators. Buses.</p>
+    
+    <div class="show">
+        <div class="grid content-center justify-items-center text-white pt-6">
+            <h2 class="text-white">Kai's favorite toys are vehicles.</h2>
+            <p class="text-3xl text-white">Cars. Police cars. Fire trucks. Excavators. Buses.</p>
+        </div>
+        <Traffic />
     </div>
 </section>
 
