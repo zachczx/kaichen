@@ -5,9 +5,9 @@ import spiderman from '$lib/assets/_4f970765-bfa3-471a-9c40-b2fb8d3e5cb1.webp';
 import toycars from '$lib/assets/nick-xcRt6KM5s04-unsplash_full.webp';
 import classphoto from '$lib/assets/photo-output_full.webp';
 import spiderwebbg from '$lib/assets/matthieu-joannon-QoX88h9Pzpw-unsplash_full.webp';
-import spidermanicon from '$lib/assets/83074-spiderman-venom-youtube-symmetry-area-free-hq-image.png';
-import venomicon from '$lib/assets/pngwing.com.png';
-import milesicon from '$lib/assets/mileshead.png';
+import spidermanicon from '$lib/assets/83074-spiderman-venom-youtube-symmetry-area-free-hq-image_resized.webp';
+import venomicon from '$lib/assets/pngwing.com_resized.webp';
+import milesicon from '$lib/assets/mileshead_resized.webp';
 import { onMount } from 'svelte';
 import HeartFill from "svelte-bootstrap-icons/lib/HeartFill.svelte";
 
