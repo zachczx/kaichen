@@ -1,3 +1,1 @@
-<script>
-    export const prerender = true;
-</script>
+export const prerender = true;
