@@ -59,7 +59,7 @@ function clickTraffic(color) {
 
 <section style="background-image:url('{spiderwebbg}'); background-size: cover; background-position: 70%;" class="bg-red-500">
     <div class="hide text-white grid content-end px-8">
-        <h2>Kai is into Spiderman.</h2>
+        <h1>Kai is into Spiderman.</h1>
         <div class="text-3xl flex items-center">Kai likes Spiderman (Peter).<button on:click={clickSpidey}><img alt='Spidey' src={spidermanicon} width='80' height='80' class="self-center ms-4"></button> 
             <span class="text-red-500 flex">
                 {#if spiderhead > 0 && spiderhead <= 10}
@@ -89,8 +89,8 @@ function clickTraffic(color) {
 <section style="background-image:url('{toycars}'); background-size: cover;">
     <div class="show">
         <div class="grid content-center justify-items-center text-white pt-6">
-            <h2 class="text-white">Kai's favorite toys are vehicles.</h2>
-            <p class="text-3xl text-white">Cars. Police cars. Fire trucks. Excavators. Buses.</p>
+            <h1 class="text-white">Kai likes vehicles.</h1>
+            <p class="text-3xl text-white">Cars. Taxis. Police cars. Fire trucks. Excavators. Buses. </p>
         </div>
         <Traffic />
     </div>
@@ -98,13 +98,13 @@ function clickTraffic(color) {
 
 <section class="bg-orange-300">
 <div class="hide">
-<h2>Kai eats junk food sometimes.</h2>
+<h1>Kai eats junk food sometimes.</h1>
 <p class="text-3xl ">Kai enjoys ice cream, juices, yakult.</p>
 </section>
 
 <section style="background-image:url('{fruitbackground}'); background-position: 50% 50%; background-size: cover;">
 <div class="hide grid content-center justify-items-center text-white pt-6">
-<h2>Kai enjoys fruit.</h2>
+<h1>Kai enjoys fruit.</h1>
 <p class="text-3xl mb-7">Grapes. Apples. Strawberries. Blueberries. Watermelons. Oranges. Pineapples.</p>
 <FruitScroll />
 </div>
@@ -112,7 +112,7 @@ function clickTraffic(color) {
 
 <section class="bg-sky-500">
 <div class="hide">
-<h2>Kai loves his food.</h2>
+<h1>Kai loves his food.</h1>
 <p class="text-3xl">Kai loves noodles. Soup cai cai. sausage. fishball. tomatoes. mushrooms, fungus, squid. He has also grown to like meat.</p>
 </div>
 </section>
