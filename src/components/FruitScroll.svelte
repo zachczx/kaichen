@@ -1,36 +1,57 @@
+<script>
+import Pineapple from "$lib/assets/gabriel-yuji-Kr6Z_AbeItk-unsplash.webp";
+import Grapes from "$lib/assets/luca-j-sNN1zPDooIg-unsplash.webp";
+import Oranges from "$lib/assets/alice-pasqual-MRnV51_Yqqk-unsplash.webp";
+import Watermelon from "$lib/assets/cody-chan-802n4MChUYk-unsplash.webp";
+import Blueberries from "$lib/assets/nadeykina-evgeniya-epeLqDQh2PE-unsplash.webp";
+import Strawberries from "$lib/assets/olga-kudriavtseva-CL26_lT3Ygg-unsplash.webp";
+import Apples from "$lib/assets/annie-spratt-hiDnpd-p-eE-unsplash.webp";
+</script>
+
+<div id="fruit">
 <ul>
-    <li> <img src="
-  https://source.unsplash.com/ezSFnAFi9hY/500x500" alt="cut citrus fruits. " />
-      <span>Lorem Ipsum</span>
-    </li>
-    <li> <img src="https://source.unsplash.com/TIGDsyy0TK4/500x500" alt="sliced mango. " />
-      <span>Dolor Sit</span>
-    </li>
-    <li> <img src="https://source.unsplash.com/TdDtTu2rv4s/500x500" alt="a bunch of blueberries. " /><span>Amet Consectetur</span></li>
-    <li> <img src="https://source.unsplash.com/eudGUrDdBB0/500x500" alt="a pineapple sitting on a table. " /><span>Adipiscing Elit</span></li>
-    <li> <img src="https://source.unsplash.com/eJH4f1rlG7g/500x500" alt="frozen raspberries. " /><span>Nunc Tortor</span></li>
-    <li> <img src="https://source.unsplash.com/24RUrLSW1HI/500x500" alt="a sliced strawberry. " /><span>Metus Mollis</span></li>
-    <li> <img src="https://source.unsplash.com/h5yMpgOI5nI/500x500" alt="an arrangement of assorted sliced fruits. " /><span>Congue Sagittis</span></li>
-    <li> <img src="https://source.unsplash.com/2TYrR2IB72s/500x500" alt="sliced watermelons. " /><span>Vestibulum Et</span></li>
-    <li> <img src="https://source.unsplash.com/1cWZgnBhZRs/500x500" alt="grapefruits, lemons, and pomegranates. " /><span>Donec Eget</span></li>
-    <li> <img src="https://source.unsplash.com/9aOswReDKPo/500x500" alt="half of an avocado. " /><span>Maecenas et Justo</span></li>
-    <li> <img src="https://source.unsplash.com/Nl7eLS8E2Ss/500x500" alt="half of a lime. " /><span>Malesuada Quam</span></li>
-    <li> <img src="https://source.unsplash.com/3HhXWJzG5Ko/500x500" alt="a single cherry with stem. " /><span>Ultricies Sollicitudin</span></li>
-    <li> <img src="https://source.unsplash.com/fczCr7MdE7U/500x500" alt="a bunch of bananas. " /><span>Gravida Nibh</span></li>
-    <li> <img src="https://source.unsplash.com/uI900SItAyY/500x500" alt="three pears. " /><span>Pellentesque Sapien</span></li>
-    <li> <img src="https://source.unsplash.com/0AynZdszfz0/500x500" alt="a basket full of peaches next to a plate with sliced peaches. " /><span>Suspendisse Vel</span></li>
-    <li> <img src="https://source.unsplash.com/C6JhUKs9q8M/500x500" alt="a bowl of avocados. " /><span>Mauris Consectetur</span></li>
-  </ul>
+    <li><img src="{Pineapple}" alt="Pineapple" /><span>Pineapple</span></li>
+    <li><img src="{Grapes}" alt="Grape" /><span>Grape</span></li>
+    <li><img src="{Oranges}" alt="oranges" /><span>Orange</span></li>
+    <li><img src="{Watermelon}" alt="Watermelon" /><span>Watermelon</span></li>
+    <li><img src="{Blueberries}" alt="Blueberries" /><span>Blueberries</span></li>
+    <li><img src="{Strawberries}" alt="Strawberries" /><span>Strawberries</span></li>
+    <li><img src="{Apples}" alt="Apples" /><span>Apples</span></li>
+</ul>
+</div>
 
 <style>
+:root {
+  scrollbar-color: green white;
+  scrollbar-width: thin;
+}
+
+/* WebKit and Chromiums */
+::-webkit-scrollbar {
+  width: 0.5em;
+  height: 0.5em;
+  background-color: white;
+}
+
+::-webkit-scrollbar-thumb {
+  background: green;
+  border-radius: 5px;
+}
+
+#fruit {
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  font-size: 1.5em;
+}
+
 ul {
   list-style: none;
-  width: min(90vw, 51rem);
-  max-width: 51rem;
+  width: min(90vw, 71rem);
+  max-width: 71rem;
   display: flex;
-  overflow-x: auto;
+  overflow-x: scroll;
   overflow-y: hidden;
-  padding-bottom: 2rem;
+  padding-bottom: 0.2rem;
 }
 
 li {
@@ -45,19 +66,43 @@ li {
   align-items: flex-start;
   height: 20rem;
 }
-  span {
+
+li:nth-child(2) {
+    left: 2.5rem;
+}
+li:nth-child(3) {
+    left: 5rem;
+}
+li:nth-child(4) {
+    left: 7.5rem;
+}
+li:nth-child(5) {
+    left: 10rem;
+}
+li:nth-child(6) {
+    left: 12.5rem;
+}
+li:nth-child(7) {
+    left: 15rem;
+}
+li:nth-child(8) {
+    left: 17.5rem;
+}
+
+span {
     position: absolute;
+    color: white;
     top: 0;
     left: 0;
     display: block;
-    padding: 0.75em;
+    padding: 0.2em;
     height: 100%;
     writing-mode: vertical-lr;
     text-align: center;
     transform: rotate(180deg);
-  }
+}
 
-  &::before {
+span:before {
     content: "";
     position: absolute;
     top: 50%;
@@ -65,11 +110,11 @@ li {
     transform: translate(0%, -50%);
     height: 100%;
     width: 100%;
-    background-image: linear-gradient(to right, #f44336cc 2%, transparent 60%);
+    background-color: rgba(0, 0, 0, 0.6);
     z-index: -1;
-  }
+}
 
-  img {
+#fruit img {
     display: block;
     height: 20rem;
     width: 100%;
@@ -79,5 +124,5 @@ li {
     left: 0;
     transform: translate(0%, -50%);
     z-index: -2;
-  }
+}
 </style>

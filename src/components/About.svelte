@@ -9,7 +9,11 @@ import spidermanicon from '$lib/assets/83074-spiderman-venom-youtube-symmetry-ar
 import venomicon from '$lib/assets/pngwing.com_resized.webp';
 import milesicon from '$lib/assets/mileshead_resized.webp';
 
+import fruitbackground from "$lib/assets/bruna-branco-7r1HxvVC7AY-unsplash.webp";
+
 import Traffic from './Traffic.svelte';
+
+import FruitScroll from './FruitScroll.svelte';
 
 import { onMount } from 'svelte';
 //bootstrap icons
@@ -98,10 +102,12 @@ function clickTraffic(color) {
 <p class="text-3xl ">Kai enjoys ice cream, juices, yakult.</p>
 </section>
 
-<section class="bg-green-700">
-<div class="hide">
+<section style="background-image:url('{fruitbackground}'); background-position: 50% 50%; background-size: cover;">
+<div class="hide grid content-center justify-items-center text-white pt-6">
 <h2>Kai enjoys fruit.</h2>
-<p class="text-3xl">Grapes. Apples. Strawberries. Blueberries. Watermelons. Oranges. Pineapples.</p>
+<p class="text-3xl mb-7">Grapes. Apples. Strawberries. Blueberries. Watermelons. Oranges. Pineapples.</p>
+<FruitScroll />
+</div>
 </section>
 
 <section class="bg-sky-500">
