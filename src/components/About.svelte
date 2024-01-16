@@ -10,6 +10,7 @@ import venomicon from '$lib/assets/pngwing.com_resized.webp';
 import milesicon from '$lib/assets/mileshead_resized.webp';
 
 import fruitbackground from "$lib/assets/bruna-branco-7r1HxvVC7AY-unsplash.webp";
+import icecreambackground from "$lib/assets/lama-roscu-Wpg3Qm0zaGk-unsplash.webp";
 
 import Traffic from './Traffic.svelte';
 
@@ -86,7 +87,7 @@ function clickTraffic(color) {
     </div>
 </section>
 
-<section style="background-image:url('{toycars}'); background-size: cover;">
+<section style="background-image:url('{toycars}'); background-position: 90% 10%; background-size: cover;">
     <div class="show">
         <div class="grid content-center justify-items-center text-white pt-6">
             <h1 class="text-white">Kai likes vehicles.</h1>
@@ -96,8 +97,8 @@ function clickTraffic(color) {
     </div>
 </section>
 
-<section class="bg-orange-300">
-<div class="hide">
+<section style="background-image:url('{icecreambackground}'); background-position: 50% 50%; background-size: cover;" class="bg-orange-300">
+    <div class="hide grid content-center justify-items-center text-white pt-6">
 <h1>Kai eats junk food sometimes.</h1>
 <p class="text-3xl ">Kai enjoys ice cream, juices, yakult.</p>
 </section>
@@ -111,7 +112,7 @@ function clickTraffic(color) {
 </section>
 
 <section class="bg-sky-500">
-<div class="hide">
+    <div class="hide grid content-center justify-items-center text-white pt-6">
 <h1>Kai loves his food.</h1>
 <p class="text-3xl">Kai loves noodles. Soup cai cai. sausage. fishball. tomatoes. mushrooms, fungus, squid. He has also grown to like meat.</p>
 </div>
