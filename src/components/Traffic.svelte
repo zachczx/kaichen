@@ -14,7 +14,14 @@ function visibleClick(color) {
 <div class="flex justify-center"><button on:click={visibleClick}><CircleFill fill="green" width="40" height="40" /><CircleFill fill="yellow" width="40" height="40" /><CircleFill fill="red" width="40" height="40" /></button></div>
 <div class="flex justify-end min-h-50">
 {#if visible}
-<img transition:fly={{duration:8000, x:-2000, opacity:1}} src={firetruck} alt="Wee woo wee woo" class="flex justify-end">
+<img transition:fly={{duration:8000, x:-3800, opacity:1}} src={firetruck} alt="Wee woo wee woo" class="flex justify-end flyin">
 {/if}
 </div>
+
+<style>
+.flyin {
+  position: absolute;
+  right: -30%;
+}
+</style>
 

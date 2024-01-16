@@ -18,13 +18,14 @@ section {
   opacity: 1;
   filter: blur(0);
   transform: translateX(0%); 
-  background-color: rgba(0, 9, 78, 0.404);
+  background-color: rgba(26, 26, 26, 0.6);
   min-height: 100vh;
   min-width: 100vw;
 }
 
+/*
 section:nth-child(2) .show {
-  background-color: rgba(0, 30, 255, 0.372);
+  background-color: rgba(0, 30, 255, 0.672);
 }
 
 section:nth-child(3) .show {
@@ -43,3 +44,4 @@ section:nth-child(5) .show {
 section:nth-child(6) .show {
   background-color: rgba(50, 205, 50, 0.3);
 }
+*/

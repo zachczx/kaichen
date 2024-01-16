@@ -1,7 +1,7 @@
 <script>
 //images
-import venom from '$lib/assets/_16f0c0d3-4025-4397-bf59-2f3d26f17891.webp';
-import spiderman from '$lib/assets/_4f970765-bfa3-471a-9c40-b2fb8d3e5cb1.webp';
+import Swing from './Swing.svelte';
+
 import toycars from '$lib/assets/nick-xcRt6KM5s04-unsplash_full.webp';
 import classphoto from '$lib/assets/photo-output_full.webp';
 import spiderwebbg from '$lib/assets/matthieu-joannon-QoX88h9Pzpw-unsplash_full.webp';
@@ -10,7 +10,6 @@ import venomicon from '$lib/assets/pngwing.com_resized.webp';
 import milesicon from '$lib/assets/mileshead_resized.webp';
 
 import Traffic from './Traffic.svelte';
-import CircleFill from "svelte-bootstrap-icons/lib/CircleFill.svelte";
 
 import { onMount } from 'svelte';
 //bootstrap icons
@@ -70,6 +69,7 @@ function clickTraffic(color) {
                 {/if}
             </span>
         </div>
+
         <div class="text-3xl flex items-center">
             He likes Venom.<img alt='Spidey' src={venomicon} width='80' height='80' class="self-center ms-4">
         </div>
@@ -77,14 +77,12 @@ function clickTraffic(color) {
             He kind of likes Miles. <img alt='Spidey' src={milesicon} width='80' height='80' class="self-center ms-4">
         </div>
         <div class="flex place-content-end">
-            <img alt="Friendly neighborhood spiderman" src={spiderman} width="400" height="400" loading="lazy">
-            <img alt="Venom rawr" src={venom} width="400" height="400" loading="lazy">
+            <Swing />        
         </div>
     </div>
 </section>
 
 <section style="background-image:url('{toycars}'); background-size: cover;">
-    
     <div class="show">
         <div class="grid content-center justify-items-center text-white pt-6">
             <h2 class="text-white">Kai's favorite toys are vehicles.</h2>
@@ -97,7 +95,7 @@ function clickTraffic(color) {
 <section class="bg-orange-300">
 <div class="hide">
 <h2>Kai eats junk food sometimes.</h2>
-<p class="text-3xl">Kai enjoys ice cream, juices, yakult.</p>
+<p class="text-3xl ">Kai enjoys ice cream, juices, yakult.</p>
 </section>
 
 <section class="bg-green-700">
