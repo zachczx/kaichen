@@ -47,12 +47,12 @@ onMount(() => {
     <p class="text-3xl mb-4">Kai enjoys ice cream, juices, yakult.</p>
 
 <div class="container max-h-min mx-auto grid grid-cols-6 grid-flow-row auto-rows-max gap-6 mt-5">
-    <div><img src={icecreampic} alt="Yum" class="object-scale-down animate"></div>
-    <div><img src={icecreampic2} alt="Yum" class="object-scale-down animate"></div>
-    <div><img src={icecreampic3} alt="Yum" class="object-scale-down animate"></div>
-    <div><img src={icecreampic4} alt="Yum" class="object-scale-down animate"></div>
-    <div><img src={icecreampic5} alt="Yum" class="object-scale-down animate"></div>
-    <div><img src={icecreampic6} alt="Yum" class="object-scale-down animate"></div>
+    <div><img src={icecreampic} alt="Yum" class="object-scale-down animate" loading="lazy"></div>
+    <div><img src={icecreampic2} alt="Yum" class="object-scale-down animate" loading="lazy"></div>
+    <div><img src={icecreampic3} alt="Yum" class="object-scale-down animate" loading="lazy"></div>
+    <div><img src={icecreampic4} alt="Yum" class="object-scale-down animate" loading="lazy"></div>
+    <div><img src={icecreampic5} alt="Yum" class="object-scale-down animate" loading="lazy"></div>
+    <div><img src={icecreampic6} alt="Yum" class="object-scale-down animate" loading="lazy"></div>
 </div>
 </div>
 
