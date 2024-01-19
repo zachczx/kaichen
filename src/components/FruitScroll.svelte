@@ -17,6 +17,9 @@ import Apples from "$lib/assets/annie-spratt-hiDnpd-p-eE-unsplash.webp";
     <li><img src="{Blueberries}" alt="Blueberries" /><span>Blueberries</span></li>
     <li><img src="{Strawberries}" alt="Strawberries" /><span>Strawberries</span></li>
     <li><img src="{Apples}" alt="Apples" /><span>Apples</span></li>
+    <li style="background-color: black"></li>
+    <li style="background-color: black"></li>
+    <li style="background-color: black"></li>
 </ul>
 </div>
 
@@ -29,7 +32,7 @@ import Apples from "$lib/assets/annie-spratt-hiDnpd-p-eE-unsplash.webp";
 /* WebKit and Chromiums */
 ::-webkit-scrollbar {
   width: 0.5em;
-  height: 0.5em;
+  height: 0.3em;
   background-color: white;
 }
 
@@ -102,7 +105,7 @@ span {
     transform: rotate(180deg);
 }
 
-span:before {
+span::before {
     content: "";
     position: absolute;
     top: 50%;

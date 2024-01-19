@@ -14,7 +14,13 @@ import icecreambackground from "$lib/assets/lama-roscu-Wpg3Qm0zaGk-unsplash.webp
 
 import Traffic from './Traffic.svelte';
 
+import Hello from './Hello.svelte';
+
 import FruitScroll from './FruitScroll.svelte';
+
+import Food from './Food.svelte';
+
+import IceCream from './IceCream.svelte';
 
 import { onMount } from 'svelte';
 //bootstrap icons
@@ -53,13 +59,12 @@ function clickTraffic(color) {
 
 <section style="background-image:url('{classphoto}'); background-size: cover; background-position: 80% 70%;" class="bg-yellow-300">
 <div class="hide grid content-center justify-items-center text-white">
-<h1>Hello! This is Kai.</h1>
-<p class="text-3xl">Kai's just a kid.</p>
+    <Hello />
 </div>
 </section>
 
 <section style="background-image:url('{spiderwebbg}'); background-size: cover; background-position: 70%;" class="bg-red-500">
-    <div class="hide text-white grid content-end px-8">
+    <div class="hide text-white grid content-end px-8 py-5">
         <h1>Kai is into Spiderman.</h1>
         <div class="text-3xl flex items-center">Kai likes Spiderman (Peter).<button on:click={clickSpidey}><img alt='Spidey' src={spidermanicon} width='80' height='80' class="self-center ms-4"></button> 
             <span class="text-red-500 flex">
@@ -89,18 +94,16 @@ function clickTraffic(color) {
 
 <section style="background-image:url('{toycars}'); background-position: 90% 10%; background-size: cover;">
     <div class="show">
+        <Traffic />
         <div class="grid content-center justify-items-center text-white pt-6">
             <h1 class="text-white">Kai likes vehicles.</h1>
             <p class="text-3xl text-white">Cars. Taxis. Police cars. Fire trucks. Excavators. Buses. </p>
         </div>
-        <Traffic />
     </div>
 </section>
 
 <section style="background-image:url('{icecreambackground}'); background-position: 50% 50%; background-size: cover;" class="bg-orange-300">
-    <div class="hide grid content-center justify-items-center text-white pt-6">
-<h1>Kai eats junk food sometimes.</h1>
-<p class="text-3xl ">Kai enjoys ice cream, juices, yakult.</p>
+<IceCream />
 </section>
 
 <section style="background-image:url('{fruitbackground}'); background-position: 50% 50%; background-size: cover;">
@@ -113,7 +116,12 @@ function clickTraffic(color) {
 
 <section class="bg-sky-500">
     <div class="hide grid content-center justify-items-center text-white pt-6">
-<h1>Kai loves his food.</h1>
-<p class="text-3xl">Kai loves noodles. Soup cai cai. sausage. fishball. tomatoes. mushrooms, fungus, squid. He has also grown to like meat.</p>
+<Food />
 </div>
 </section>
+
+<style>
+
+
+
+</style>
