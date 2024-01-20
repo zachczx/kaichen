@@ -95,7 +95,7 @@ function clickTraffic(color) {
 <section style="background-image:url('{toycars}'); background-position: 90% 10%; background-size: cover;">
     <div class="hide">
         <Traffic />
-        <div class="grid content-center justify-items-center text-white pt-6">
+        <div class="grid content-center justify-items-center text-white pt-6 px-4">
             <h1 class="text-white">Kai likes vehicles.</h1>
             <p class="text-3xl text-white">Cars. Taxis. Police cars. Fire trucks. Excavators. Buses. </p>
         </div>
@@ -107,7 +107,7 @@ function clickTraffic(color) {
 </section>
 
 <section style="background-image:url('{fruitbackground}'); background-position: 50% 50%; background-size: cover;">
-<div class="hide grid content-center justify-items-center text-white pt-6">
+<div class="hide grid content-center justify-items-center text-white pt-6 px-4">
 <h1>Kai enjoys fruit.</h1>
 <p class="text-3xl mb-7">Grapes. Apples. Strawberries. Blueberries. Watermelons. Oranges. Pineapples.</p>
 <FruitScroll />
@@ -115,7 +115,7 @@ function clickTraffic(color) {
 </section>
 
 <section class="bg-sky-500">
-    <div class="hide grid content-center justify-items-center text-white pt-6">
+    <div class="hide grid content-center justify-items-center text-white pt-6 px-4">
 <Food />
 </div>
 </section>
