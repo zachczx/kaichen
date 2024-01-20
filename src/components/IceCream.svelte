@@ -43,19 +43,31 @@ onMount(() => {
         });
     })
 
+    let textWrapper = document.querySelector('ml2')
+    console.log(textWrapper)
+    textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, '<span class="letter">$&</span>')
+
+    anime.timeline({loop: true})
+        .add({
+            targets: '.ml2',
+            easing: "easeOutExpo",
+            duration: 300,
+            delay: (el, i) => 70*i,
+        });
+
 });
 </script>
 <div class="hide max-h-full grid content-center justify-items-center text-white pt-6">
-    <h1>Kai eats junk food sometimes.</h1>
-    <p class="text-3xl mb-4">Kai enjoys ice cream, juices, yakult.</p>
+    <h1 class="ml2 mb-2">Kai eats junk food sometimes.</h1>
+    <p class="text-3xl mb-4">Ice cream, ice cream, and ice cream. And milo, orange juice, honey lemon.</p>
 
 <div class="container max-h-min mx-auto grid grid-cols-6 grid-flow-row auto-rows-max gap-6 mt-5">
-    <div class="bg-white pb-3 border-x-2 border-t-2 border-b-8 border-white overflow-hidden"><img src={icecreampic} alt="Yum" class="object-scale-down animate" loading="lazy"></div>
-    <div class="bg-white pb-3 border-x-2 border-t-2 border-b-8 border-white overflow-hidden"><img src={icecreampic2} alt="Yum" class="object-scale-down animate" loading="lazy"></div>
-    <div class="bg-white pb-3 border-x-2 border-t-2 border-b-8 border-white overflow-hidden"><img src={icecreampic3} alt="Yum" class="object-scale-down animate" loading="lazy"></div>
-    <div class="bg-white pb-3 border-x-2 border-t-2 border-b-8 border-white overflow-hidden"><img src={icecreampic4} alt="Yum" class="object-scale-down animate" loading="lazy"></div>
-    <div class="bg-white pb-3 border-x-2 border-t-2 border-b-8 border-white overflow-hidden"><img src={icecreampic5} alt="Yum" class="object-scale-down animate" loading="lazy"></div>
-    <div class="bg-white pb-3 border-x-2 border-t-2 border-b-8 border-white overflow-hidden"><img src={icecreampic6} alt="Yum" class="object-scale-down animate" loading="lazy"></div>
+    <div class="bg-white border-x-2 border-t-2 border-b-8 border-white overflow-hidden"><div class="mb-5 overflow-hidden"><img src={icecreampic} alt="Yum" class="object-scale-down animate" loading="lazy"></div></div>
+    <div class="bg-white border-x-2 border-t-2 border-b-8 border-white overflow-hidden"><div class="mb-5 overflow-hidden"><img src={icecreampic2} alt="Yum" class="object-scale-down animate" loading="lazy"></div></div>
+    <div class="bg-white border-x-2 border-t-2 border-b-8 border-white overflow-hidden"><div class="mb-5 overflow-hidden"><img src={icecreampic3} alt="Yum" class="object-scale-down animate" loading="lazy"></div></div>
+    <div class="bg-white border-x-2 border-t-2 border-b-8 border-white overflow-hidden"><div class="mb-5 overflow-hidden"><img src={icecreampic4} alt="Yum" class="object-scale-down animate" loading="lazy"></div></div>
+    <div class="bg-white border-x-2 border-t-2 border-b-8 border-white overflow-hidden"><div class="mb-5 overflow-hidden"><img src={icecreampic5} alt="Yum" class="object-scale-down animate" loading="lazy"></div></div>
+    <div class="bg-white border-x-2 border-t-2 border-b-8 border-white overflow-hidden"><div class="mb-5 overflow-hidden"><img src={icecreampic6} alt="Yum" class="object-scale-down animate" loading="lazy"></div></div>
 </div>
 </div>
 
