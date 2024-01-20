@@ -18,15 +18,18 @@ onMount(() => {
             console.log('entered!')
             let animation = anime.timeline({
                 targets: el,
-                duration: 200,
+                duration: 500,
             });
             animation
             .add({
                 scale: 1.5,
                 translateZ: 900,
-                easing: 'linear',
+                easing: 'easeInCubic',
                 zIndex: 3,
             })
+            .add({
+
+            });
         });
 
         el.addEventListener('mouseleave', () => {
@@ -34,7 +37,7 @@ onMount(() => {
             anime({
                 targets: el,
                 scale: 1,
-                duration: 200,
+                duration: 500,
                 zIndex: -1,
             })
         });
@@ -47,12 +50,12 @@ onMount(() => {
     <p class="text-3xl mb-4">Kai enjoys ice cream, juices, yakult.</p>
 
 <div class="container max-h-min mx-auto grid grid-cols-6 grid-flow-row auto-rows-max gap-6 mt-5">
-    <div><img src={icecreampic} alt="Yum" class="object-scale-down animate" loading="lazy"></div>
-    <div><img src={icecreampic2} alt="Yum" class="object-scale-down animate" loading="lazy"></div>
-    <div><img src={icecreampic3} alt="Yum" class="object-scale-down animate" loading="lazy"></div>
-    <div><img src={icecreampic4} alt="Yum" class="object-scale-down animate" loading="lazy"></div>
-    <div><img src={icecreampic5} alt="Yum" class="object-scale-down animate" loading="lazy"></div>
-    <div><img src={icecreampic6} alt="Yum" class="object-scale-down animate" loading="lazy"></div>
+    <div class="rounded-full overflow-hidden"><img src={icecreampic} alt="Yum" class="object-scale-down animate" loading="lazy"></div>
+    <div class="rounded-full overflow-hidden"><img src={icecreampic2} alt="Yum" class="object-scale-down animate" loading="lazy"></div>
+    <div class="rounded-full overflow-hidden"><img src={icecreampic3} alt="Yum" class="object-scale-down animate" loading="lazy"></div>
+    <div class="rounded-full overflow-hidden"><img src={icecreampic4} alt="Yum" class="object-scale-down animate" loading="lazy"></div>
+    <div class="rounded-full overflow-hidden"><img src={icecreampic5} alt="Yum" class="object-scale-down animate" loading="lazy"></div>
+    <div class="rounded-full overflow-hidden"><img src={icecreampic6} alt="Yum" class="object-scale-down animate" loading="lazy"></div>
 </div>
 </div>
 
