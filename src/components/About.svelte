@@ -93,7 +93,7 @@ function clickTraffic(color) {
 </section>
 
 <section style="background-image:url('{toycars}'); background-position: 90% 10%; background-size: cover;">
-    <div class="show">
+    <div class="hide">
         <Traffic />
         <div class="grid content-center justify-items-center text-white pt-6">
             <h1 class="text-white">Kai likes vehicles.</h1>

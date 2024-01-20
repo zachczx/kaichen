@@ -1,21 +1,8 @@
 <script>
-import { fly, fade } from 'svelte/transition'; 
 import firetruck from '$lib/assets/_89a7c601-7ead-4e09-aef0-48325c78f215.webp';
 import CircleFill from "svelte-bootstrap-icons/lib/CircleFill.svelte";
-import { tick } from 'svelte';
 import { onMount } from 'svelte';
 import anime from 'animejs';
-
-let visible = true
-function visibleClick(color) {
-	if (visible == true) {
-		visible = false
-	} else {
-		visible = true
-	}
-}
-
-
 
 onMount(() => {
 
