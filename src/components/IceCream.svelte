@@ -50,12 +50,12 @@ onMount(() => {
     <p class="text-3xl mb-4">Kai enjoys ice cream, juices, yakult.</p>
 
 <div class="container max-h-min mx-auto grid grid-cols-6 grid-flow-row auto-rows-max gap-6 mt-5">
-    <div class="rounded-full overflow-hidden"><img src={icecreampic} alt="Yum" class="object-scale-down animate" loading="lazy"></div>
-    <div class="rounded-full overflow-hidden"><img src={icecreampic2} alt="Yum" class="object-scale-down animate" loading="lazy"></div>
-    <div class="rounded-full overflow-hidden"><img src={icecreampic3} alt="Yum" class="object-scale-down animate" loading="lazy"></div>
-    <div class="rounded-full overflow-hidden"><img src={icecreampic4} alt="Yum" class="object-scale-down animate" loading="lazy"></div>
-    <div class="rounded-full overflow-hidden"><img src={icecreampic5} alt="Yum" class="object-scale-down animate" loading="lazy"></div>
-    <div class="rounded-full overflow-hidden"><img src={icecreampic6} alt="Yum" class="object-scale-down animate" loading="lazy"></div>
+    <div class="bg-white pb-3 border-x-2 border-t-2 border-b-8 border-white overflow-hidden"><img src={icecreampic} alt="Yum" class="object-scale-down animate" loading="lazy"></div>
+    <div class="bg-white pb-3 border-x-2 border-t-2 border-b-8 border-white overflow-hidden"><img src={icecreampic2} alt="Yum" class="object-scale-down animate" loading="lazy"></div>
+    <div class="bg-white pb-3 border-x-2 border-t-2 border-b-8 border-white overflow-hidden"><img src={icecreampic3} alt="Yum" class="object-scale-down animate" loading="lazy"></div>
+    <div class="bg-white pb-3 border-x-2 border-t-2 border-b-8 border-white overflow-hidden"><img src={icecreampic4} alt="Yum" class="object-scale-down animate" loading="lazy"></div>
+    <div class="bg-white pb-3 border-x-2 border-t-2 border-b-8 border-white overflow-hidden"><img src={icecreampic5} alt="Yum" class="object-scale-down animate" loading="lazy"></div>
+    <div class="bg-white pb-3 border-x-2 border-t-2 border-b-8 border-white overflow-hidden"><img src={icecreampic6} alt="Yum" class="object-scale-down animate" loading="lazy"></div>
 </div>
 </div>
 
