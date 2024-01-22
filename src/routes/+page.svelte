@@ -28,7 +28,7 @@ import ProgressBar from '../components/ProgressBar.svelte';
     //bootstrap icons
     
     import HeartFill from "svelte-bootstrap-icons/lib/HeartFill.svelte";
-    import Apple from "$lib/assets/svg/Apple.svg";
+    import Apple from "$lib/assets/svg/apple.svg";
     
     //---------------------------
     
