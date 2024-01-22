@@ -3,8 +3,8 @@ import icecreampic from "$lib/assets/20230527_194706.webp";
 import icecreampic2 from "$lib/assets/20230708_201806.webp";
 import icecreampic3 from "$lib/assets/20230916_193540.webp";
 import icecreampic4 from "$lib/assets/20231216_150032.webp";
-import icecreampic5 from "$lib/assets/PXL_20231022_102535539.webp";
-import icecreampic6 from "$lib/assets/PXL_20231231_122645070.webp";
+import icecreampic5 from "$lib/assets/PXL_20230427_113342159.MP.webp";
+import icecreampic6 from "$lib/assets/20231216_150041.webp";
 import { onMount } from "svelte";
 
 import anime from 'animejs';
@@ -66,11 +66,11 @@ onMount(() => {
         </p>
 
 <div class="container max-h-min mx-auto grid grid-cols-2 lg:grid-cols-6 grid-flow-row auto-rows-max gap-6 mt-5">
+    <div class="bg-white border-x-2 border-t-2 border-b-8 border-white overflow-hidden"><div class="mb-5 overflow-hidden"><img src={icecreampic5} alt="Yum" class="object-scale-down animate" loading="lazy"></div></div>
     <div class="bg-white border-x-2 border-t-2 border-b-8 border-white overflow-hidden"><div class="mb-5 overflow-hidden"><img src={icecreampic} alt="Yum" class="object-scale-down animate" loading="lazy"></div></div>
     <div class="bg-white border-x-2 border-t-2 border-b-8 border-white overflow-hidden"><div class="mb-5 overflow-hidden"><img src={icecreampic2} alt="Yum" class="object-scale-down animate" loading="lazy"></div></div>
     <div class="bg-white border-x-2 border-t-2 border-b-8 border-white overflow-hidden"><div class="mb-5 overflow-hidden"><img src={icecreampic3} alt="Yum" class="object-scale-down animate" loading="lazy"></div></div>
     <div class="bg-white border-x-2 border-t-2 border-b-8 border-white overflow-hidden"><div class="mb-5 overflow-hidden"><img src={icecreampic4} alt="Yum" class="object-scale-down animate" loading="lazy"></div></div>
-    <div class="bg-white border-x-2 border-t-2 border-b-8 border-white overflow-hidden"><div class="mb-5 overflow-hidden"><img src={icecreampic5} alt="Yum" class="object-scale-down animate" loading="lazy"></div></div>
     <div class="bg-white border-x-2 border-t-2 border-b-8 border-white overflow-hidden"><div class="mb-5 overflow-hidden"><img src={icecreampic6} alt="Yum" class="object-scale-down animate" loading="lazy"></div></div>
 </div>
 </div>
