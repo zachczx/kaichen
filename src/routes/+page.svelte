@@ -13,7 +13,8 @@ import ProgressBar from '../components/ProgressBar.svelte';
     
     import fruitbackground from "$lib/assets/bruna-branco-7r1HxvVC7AY-unsplash.webp";
     import icecreambackground from "$lib/assets/lama-roscu-Wpg3Qm0zaGk-unsplash.webp";
-    
+    import noodlebackground from "$lib/assets/pexels-polina-tankilevitch-4518665.webp";
+
     import Traffic from '../components/Traffic.svelte';
     
     import Hello from '../components/Hello.svelte';
@@ -45,6 +46,18 @@ import ProgressBar from '../components/ProgressBar.svelte';
         })
     const hiddenElements = document.querySelectorAll('.hide')
     hiddenElements.forEach((el) => observer.observe(el))
+    
+    let animateApple = document.getElementById('animateapple')
+
+    anime({
+        targets: animateApple,
+        strokeDashoffset: [anime.setDashoffset, 0],
+        easing: 'easeInOutSine',
+        duration: 1500,
+        delay: function(el, i) { return i * 250 },
+        direction: 'alternate',
+        loop: true,
+    });
     })
     
     let spiderhead = 0
@@ -113,19 +126,19 @@ import ProgressBar from '../components/ProgressBar.svelte';
     <section style="background-image:url('{fruitbackground}'); background-position: 50% 50%; background-size: cover;">
     <div class="hide grid content-center justify-items-center text-white pt-6 px-4">
     <h1 class="flex">Kai enj
-        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-apple fill-red-600 hover:fill-red-400 flex" width="80" height="80" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-        <path d="M12 14m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
-        <path d="M12 11v-6a2 2 0 0 1 2 -2h2v1a2 2 0 0 1 -2 2h-2" />
-        <path d="M10 10.5c1.333 .667 2.667 .667 4 0" />
-      </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" id="animateapple" class="icon icon-tabler icon-tabler-apple fill-red-600 hover:fill-red-400" width="80" height="80" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M12 14m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+            <path d="M12 11v-6a2 2 0 0 1 2 -2h2v1a2 2 0 0 1 -2 2h-2" />
+            <path d="M10 10.5c1.333 .667 2.667 .667 4 0" />
+        </svg>
         ys fruit.</h1>
     <p class="text-3xl mb-7">Grapes. Apples. Strawberries. Blueberries. Watermelons. Oranges. Pineapples.</p>
     <FruitScroll />
     </div>
     </section>
     
-    <section class="bg-sky-500">
+    <section class="bg-sky-500" style="background-image:url('{noodlebackground}'); background-position: 50% 50%; background-size: cover;">
         <div class="hide grid content-center justify-items-center text-white pt-6 px-4">
     <Food />
     </div>

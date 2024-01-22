@@ -43,23 +43,27 @@ onMount(() => {
         });
     })
 
-    let textWrapper = document.querySelector('ml2')
-    console.log(textWrapper)
-    textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, '<span class="letter">$&</span>')
-
-    anime.timeline({loop: true})
-        .add({
-            targets: '.ml2',
-            easing: "easeOutExpo",
-            duration: 300,
-            delay: (el, i) => 70*i,
-        });
-
 });
 </script>
 <div class="hide max-h-full grid content-center justify-items-center text-white pt-6 px-4">
-    <h1 class="ml2 mb-2">Kai eats junk food sometimes.</h1>
-    <p class="text-3xl mb-4">Ice cream, ice cream, and ice cream. And milo, orange juice, honey lemon.</p>
+    <h1 class="mb-2">Kai eats junk food sometimes.</h1>
+    <p class="text-3xl mb-4 flex items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-ice-cream mx-2 fill-orange-600 hover:fill-green-400" width="60" height="60" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M12 21.5v-4.5" />
+            <path d="M8 17h8v-10a4 4 0 1 0 -8 0v10z" />
+            <path d="M8 10.5l8 -3.5" />
+            <path d="M8 14.5l8 -3.5" />
+        </svg>
+        Ice cream, ice cream, and ice cream. And milo, orange juice, honey lemon.
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-ice-cream mx-2 fill-yellow-400 hover:fill-blue-300" width="60" height="60" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M12 21.5v-4.5" />
+            <path d="M8 17h8v-10a4 4 0 1 0 -8 0v10z" />
+            <path d="M8 10.5l8 -3.5" />
+            <path d="M8 14.5l8 -3.5" />
+        </svg>
+        </p>
 
 <div class="container max-h-min mx-auto grid grid-cols-2 lg:grid-cols-6 grid-flow-row auto-rows-max gap-6 mt-5">
     <div class="bg-white border-x-2 border-t-2 border-b-8 border-white overflow-hidden"><div class="mb-5 overflow-hidden"><img src={icecreampic} alt="Yum" class="object-scale-down animate" loading="lazy"></div></div>
