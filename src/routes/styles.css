@@ -1,6 +1,7 @@
 :root {
   font-family: 'Indie Flower', cursive;
-  
+  margin-top:-6px;
+  padding-top:0;
 }
 
 section {
