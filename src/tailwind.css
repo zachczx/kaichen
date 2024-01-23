@@ -4,15 +4,15 @@
 
 @layer base {
     h1 {
-        @apply text-6xl lg:text-8xl;
+        @apply text-6xl lg:text-6xl;
         font-weight: 800;
     }
     h2 {
-        @apply text-5xl lg:text-6xl;
+        @apply text-5xl lg:text-5xl;
         font-weight: 600;
     }
     h3 {
-        @apply text-4xl lg:text-5xl;
+        @apply text-4xl lg:text-4xl;
         font-weight: 600;
     }
 }
