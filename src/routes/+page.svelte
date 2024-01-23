@@ -27,6 +27,8 @@ import IceCream from '../components/IceCream.svelte';
 
 import Growing from '../components/Growing.svelte';
 
+import Particles from '../components/Particles.svelte';
+
 import { onMount } from 'svelte';
 //bootstrap icons
 
@@ -56,7 +58,7 @@ function clickSpidey() {
     spiderhead += 1
 }
 </script>
-
+<Particles />
 <ProgressBar />
 <main>
 <section class="bg-sky-500">
@@ -110,14 +112,12 @@ function clickSpidey() {
     
 <section style="background-image:url('{fruitbackground}'); background-position: 50% 50%; background-size: cover;">
     <div class="hide grid content-center justify-items-center text-white pt-6 px-4">
-    <h1 class="flex">Kai enj
-        <svg xmlns="http://www.w3.org/2000/svg" id="animateapple" class="icon icon-tabler icon-tabler-apple fill-red-600 hover:fill-red-400" width="80" height="80" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <h1 class="inline">Kai enj<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-apple fill-red-600 hover:fill-red-400 inline" width="80" height="80" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
             <path d="M12 14m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
             <path d="M12 11v-6a2 2 0 0 1 2 -2h2v1a2 2 0 0 1 -2 2h-2" />
             <path d="M10 10.5c1.333 .667 2.667 .667 4 0" />
-        </svg>
-        ys fruit.</h1>
+        </svg>ys fruit.</h1>
     <p class="text-3xl mt-4 mb-7">Grapes. Apples. Strawberries. Blueberries. Watermelons. Oranges. Pineapples.</p>
         <FruitScroll />
     </div>

@@ -1,7 +1,7 @@
 <script>
-import FruitScroll from '../../components/FruitScroll.svelte'
+import Particles from "../../components/Particles.svelte";
 </script>
 
 <main>
-<FruitScroll />
+<Particles />
 </main>

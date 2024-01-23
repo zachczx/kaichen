@@ -28,7 +28,7 @@ anime.timeline({loop: true})
 </script>
 
 <h1 class="animatefoodheader">Kai loves his food.</h1>
-<p class="text-3xl flex">Kai <HeartFill class="mx-2" fill="red" width={24} height={24} /> noodles. Soup cai cai. sausage. fishball. tomatoes. mushrooms, fungus, squid. He has also grown to like meat.</p>
+<p class="text-3xl">Kai <HeartFill class="inline" fill="red" width={24} height={24} /> noodles. Soup cai cai. sausage. fishball. tomatoes. mushrooms, fungus, squid. He has also grown to like meat.</p>
 
 <style>
 .animatefoodheader {
