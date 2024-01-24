@@ -40,43 +40,43 @@
 .particle-container .particle:nth-child(1){
     top: 12%;
     left: 42%;
-    animation: particle-motion 1s linear infinite;
+    animation: particle-motion 11s ease-out   infinite;
 }
  
 .particle-container .particle:nth-child(2){
     top: 70%;
     left: 50%;
-    animation: particle-motion 7s linear infinite;
+    animation: particle-motion 7s ease-in infinite;
 }
 .particle-container .particle:nth-child(3){
     top: 17%;
     left: 6%;
-    animation: particle-motion 9s linear infinite;
+    animation: particle-motion 19s linear infinite;
 }
 .particle-container .particle:nth-child(4){
     top: 20%;
     left: 60%;
-    animation: particle-motion 10s linear infinite;
+    animation: particle-motion 10s ease-in infinite;
 }
 .particle-container .particle:nth-child(5){
     top: 67%;
     left: 10%;
-    animation: particle-motion 6s linear infinite;
+    animation: particle-motion 16s ease-out infinite;
 }
 .particle-container .particle:nth-child(6){
     top: 80%;
     left: 70%;
-    animation: particle-motion 11s linear infinite;
+    animation: particle-motion 11s ease-in infinite;
 }
 .particle-container .particle:nth-child(7){
     top: 60%;
     left: 80%;
-    animation: particle-motion 6s linear infinite;
+    animation: particle-motion 16s linear infinite;
 }
 .particle-container .particle:nth-child(8){
     top: 32%;
     left: 25%;
-    animation: particle-motion 6s linear infinite;
+    animation: particle-motion 26s ease-in infinite;
 }
 .particle-container .particle:nth-child(9){
     top: 90%;
@@ -86,39 +86,39 @@
 .particle-container .particle:nth-child(10){
     top: 10%;
     left: 80%;
-    animation: particle-motion 5s linear infinite;
+    animation: particle-motion 5s ease-in infinite;
 }
  
 .particle-container .particle:nth-child(11){
     top: 24%;
     left: 82%;
-    animation: particle-motion 10s linear infinite;
+    animation: particle-motion 30s ease-out infinite;
 }
  
 .particle-container .particle:nth-child(12){
     top: 97%;
     left: 5%;
-    animation: particle-motion 7s linear infinite;
+    animation: particle-motion 7s ease-in infinite;
 }
 .particle-container .particle:nth-child(13){
     top: 97%;
     left: 60%;
-    animation: particle-motion 9s linear infinite;
+    animation: particle-motion 29s linear infinite;
 }
 .particle-container .particle:nth-child(14){
     top: 30%;
     left: 40%;
-    animation: particle-motion 5s linear infinite;
+    animation: particle-motion 15s ease-in infinite;
 }
 .particle-container .particle:nth-child(15){
     top: 47%;
     left: 55%;
-    animation: particle-motion 7s linear infinite;
+    animation: particle-motion 7s ease-out infinite;
 }
 .particle-container .particle:nth-child(16){
     top: 70%;
     left: 80%;
-    animation: particle-motion 8s linear infinite;
+    animation: particle-motion 8s ease-in infinite;
 }
 .particle-container .particle:nth-child(17){
     top: 40%;
@@ -128,18 +128,18 @@
 .particle-container .particle:nth-child(18){
     top: 23%;
     left: 15%;
-    animation: particle-motion 4s linear infinite;
+    animation: particle-motion 24s ease-out infinite;
 }
 .particle-container .particle:nth-child(19){
     top: 90%;
     left: 90%;
-    animation: particle-motion 3s linear infinite;
+    animation: particle-motion 23s linear infinite;
 }
  
 .particle-container .particle:nth-child(20){
     top: 85%;
     left: 95%;
-    animation: particle-motion 7s linear infinite;
+    animation: particle-motion 7s ease-out infinite;
 }
  
 @keyframes particle-motion {
