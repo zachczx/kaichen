@@ -26,7 +26,6 @@ onMount(() => {
                 translateZ: 900,
                 easing: 'easeInCubic',
                 zIndex: 3,
-                filter: grayscale,
             })
             .add({
 

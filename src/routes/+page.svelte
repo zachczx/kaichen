@@ -66,8 +66,10 @@ function clickSpidey() {
         <Growing />
     </div>
 </section>
-    
+
+<Particles />
 <section style="background-image:url('{spiderwebbg}'); background-size: cover; background-position: 70%;" class="bg-red-500">
+    
     <div class="hide text-white grid content-end justify-items-center px-8 py-5">
         <h1 class="mb-5">Kai loves Spiderman.</h1>
         <div class="text-3xl flex items-center"><HeartFill width={20} height={20} fill="red" /><HeartFill width={20} height={20} fill="red" /><HeartFill width={20} height={20} fill="red" class="me-2" />Peter Parker<button on:click={clickSpidey}><img alt='Spidey' src={spidermanicon} width='80' height='80' class="self-center ms-4"></button> 
