@@ -16,8 +16,7 @@ let x = setInterval(() => {
 }, 1000)
 </script>
 
-<div class="grid lg:grid-cols-2">
-    <div>    
+<div class="grid lg:grid-cols-1">   
         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mood-kid fill-orange-100 stroke-orange-500" width="300" height="300" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
             <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
@@ -26,10 +25,6 @@ let x = setInterval(() => {
             <path d="M9.5 15a3.5 3.5 0 0 0 5 0" />
             <path d="M12 3a2 2 0 0 0 0 4" />
         </svg>
-    </div>
-    <div> 
-        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-cake fill-yellow-100 stroke-yellow-500" width="300" height="300" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 20h18v-8a3 3 0 0 0 -3 -3h-12a3 3 0 0 0 -3 3v8z" /><path d="M3 14.803c.312 .135 .654 .204 1 .197a2.4 2.4 0 0 0 2 -1a2.4 2.4 0 0 1 2 -1a2.4 2.4 0 0 1 2 1a2.4 2.4 0 0 0 2 1a2.4 2.4 0 0 0 2 -1a2.4 2.4 0 0 1 2 -1a2.4 2.4 0 0 1 2 1a2.4 2.4 0 0 0 2 1c.35 .007 .692 -.062 1 -.197" /><path d="M12 4l1.465 1.638a2 2 0 1 1 -3.015 .099l1.55 -1.737z" /></svg>
-    </div>
 </div>
 <h1 class="mb-8">Hello! <!--<span class="underline decoration-red-300 underline-offset-3">Kai's</span> a toddler.--> <span class="bg-gradient-to-r from-yellow-200 via-green-200 to-pink-300 text-transparent bg-clip-text">Kai's birthday is coming!</span></h1>
 
