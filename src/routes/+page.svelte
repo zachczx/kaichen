@@ -67,30 +67,34 @@ function clickSpidey() {
     </div>
 </section>
 
-<Particles />
 <section style="background-image:url('{spiderwebbg}'); background-size: cover; background-position: 70%;" class="bg-red-500">
     
     <div class="hide text-white grid content-end justify-items-center px-8 py-5">
-        <h1 class="mb-5">Kai loves Spiderman.</h1>
-        <div class="text-3xl flex items-center"><HeartFill width={20} height={20} fill="red" /><HeartFill width={20} height={20} fill="red" /><HeartFill width={20} height={20} fill="red" class="me-2" />Peter Parker<button on:click={clickSpidey}><img alt='Spidey' src={spidermanicon} width='80' height='80' class="self-center ms-4"></button> 
-            <span class="text-red-500 flex">
-                {#if spiderhead > 0 && spiderhead <= 10}
-                x{spiderhead} <span class="self-center ms-2"><HeartFill width={20} height={20} /></span>
-                {:else if 10 < spiderhead && spiderhead <= 20 }
-                x{spiderhead}<span class="flex self-center ms-2"><HeartFill width={20} height={20} /></span><span class="flex self-start"><HeartFill width={20} height={20} /></span><span class="flex self-end"><HeartFill width={30} height={30} /></span>
-                {:else if 20 < spiderhead && spiderhead <= 30}
-                x{spiderhead}<span class="flex self-center ms-2"><HeartFill width={20} height={20} /></span><span class="flex self-start"><HeartFill width={20} height={20} /></span><span class="flex self-end"><HeartFill width={30} height={30} /></span><span class="flex self-start"><HeartFill width={40} height={40} /></span><span class="flex self-center ms-2"><HeartFill width={35} height={35} /></span>
-                {:else if spiderhead > 30}
-                x{spiderhead}<span class="flex self-center ms-2"><HeartFill width={20} height={20} /></span><span class="flex self-start"><HeartFill width={20} height={20} /></span><span class="flex self-end"><HeartFill width={30} height={30} /></span><span class="flex self-start"><HeartFill width={40} height={40} /></span><span class="flex self-center ms-2"><HeartFill width={35} height={35} /></span><span class="flex self-start"><HeartFill width={60} height={60} /></span><span class="flex self-end"><HeartFill width={45} height={45}/></span>
-                {/if}
-            </span>
+        <h1 class="mb-5 flex">Kai loves Spiderman.<span class="text-red-500 flex">
+            {#if spiderhead > 0 && spiderhead <= 10}
+            x{spiderhead} <span class="self-center ms-2"><HeartFill width={20} height={20} /></span>
+            {:else if 10 < spiderhead && spiderhead <= 20 }
+            x{spiderhead}<span class="flex self-center ms-2"><HeartFill width={20} height={20} /></span><span class="flex self-start"><HeartFill width={20} height={20} /></span><span class="flex self-end"><HeartFill width={30} height={30} /></span>
+            {:else if 20 < spiderhead && spiderhead <= 30}
+            x{spiderhead}<span class="flex self-center ms-2"><HeartFill width={20} height={20} /></span><span class="flex self-start"><HeartFill width={20} height={20} /></span><span class="flex self-end"><HeartFill width={30} height={30} /></span><span class="flex self-start"><HeartFill width={40} height={40} /></span><span class="flex self-center ms-2"><HeartFill width={35} height={35} /></span>
+            {:else if spiderhead > 30}
+            x{spiderhead}<span class="flex self-center ms-2"><HeartFill width={20} height={20} /></span><span class="flex self-start"><HeartFill width={20} height={20} /></span><span class="flex self-end"><HeartFill width={30} height={30} /></span><span class="flex self-start"><HeartFill width={40} height={40} /></span><span class="flex self-center ms-2"><HeartFill width={35} height={35} /></span><span class="flex self-start"><HeartFill width={60} height={60} /></span><span class="flex self-end"><HeartFill width={45} height={45}/></span>
+            {/if}
+        </span></h1>
+        <div class="text-3xl flex items-center">
+            <button on:click={clickSpidey}><img alt='Spidey' src={spidermanicon} width='80' height='80' class="self-center me-4"></button><span class="me-4">Peter Parker</span> 
+            <HeartFill width={20} height={20} fill="red" class="me-1" /><HeartFill width={20} height={20} fill="red" class="me-1" /><HeartFill width={20} height={20} fill="red" class="me-1" /><HeartFill width={20} height={20} fill="red" class="me-1" /><HeartFill width={20} height={20} fill="red" class="me-1" />
         </div>
 
         <div class="text-3xl flex items-center">
-            <HeartFill width={20} height={20} fill="red" /><HeartFill width={20} height={20} fill="red" class="me-2" />Venom<img alt='Spidey' src={venomicon} width='80' height='80' class="self-center ms-4">
+            <img alt='Venom' src={venomicon} width='80' height='80' class="self-center me-4"><span class="me-4">Venom</span>
+            <HeartFill width={20} height={20} fill="red" class="me-1" /><HeartFill width={20} height={20} fill="red" class="me-1" /><HeartFill width={20} height={20} fill="red" class="me-1" />
         </div>
         <div class="text-3xl flex items-center">
-            <HeartFill width={20} height={20} fill="red" class="me-2" />Miles (a bit)<img alt='Spidey' src={milesicon} width='80' height='80' class="self-center ms-4">
+            <img alt='Miles Morales' src={milesicon} width='80' height='80' class="self-center ms-4">
+            <span class="me-4">Miles</span>
+            <HeartFill width={20} height={20} fill="red" class="me-1" /><HeartFill width={20} height={20} fill="red" class="me-1" />
+
         </div>
         <div class="flex place-content-end">
             <Swing />        
