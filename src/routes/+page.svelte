@@ -15,6 +15,8 @@ import fruitbackground from "$lib/assets/bruna-branco-7r1HxvVC7AY-unsplash.webp"
 import icecreambackground from "$lib/assets/lama-roscu-Wpg3Qm0zaGk-unsplash.webp";
 import noodlebackground from "$lib/assets/pexels-polina-tankilevitch-4518665.webp";
 
+import spidercardbg from "$lib/assets/spider-man.webp";
+
 import Traffic from '../components/Traffic.svelte';
 
 import Hello from '../components/Hello.svelte';
@@ -69,7 +71,8 @@ function clickSpidey() {
 
 <section style="background-image:url('{spiderwebbg}'); background-size: cover; background-position: 70%;" class="bg-red-500">
     
-    <div class="hide text-white grid content-end justify-items-center px-8 py-5">
+    <div class="hide text-white grid lg:grid-cols-4 content-end justify-items-center px-8 py-5">
+        <div class="grid-cols-subgrid col-span-4">
         <h1 class="mb-5 flex">Kai loves Spiderman.<span class="text-red-500 flex">
             {#if spiderhead > 0 && spiderhead <= 10}
             x{spiderhead} <span class="self-center ms-2"><HeartFill width={20} height={20} /></span>
@@ -81,22 +84,45 @@ function clickSpidey() {
             x{spiderhead}<span class="flex self-center ms-2"><HeartFill width={20} height={20} /></span><span class="flex self-start"><HeartFill width={20} height={20} /></span><span class="flex self-end"><HeartFill width={30} height={30} /></span><span class="flex self-start"><HeartFill width={40} height={40} /></span><span class="flex self-center ms-2"><HeartFill width={35} height={35} /></span><span class="flex self-start"><HeartFill width={60} height={60} /></span><span class="flex self-end"><HeartFill width={45} height={45}/></span>
             {/if}
         </span></h1>
-        <div class="text-3xl flex items-center">
-            <button on:click={clickSpidey}><img alt='Spidey' src={spidermanicon} width='80' height='80' class="self-center me-4"></button><span class="me-4">Peter Parker</span> 
-            <HeartFill width={20} height={20} fill="red" class="me-1" /><HeartFill width={20} height={20} fill="red" class="me-1" /><HeartFill width={20} height={20} fill="red" class="me-1" /><HeartFill width={20} height={20} fill="red" class="me-1" /><HeartFill width={20} height={20} fill="red" class="me-1" />
         </div>
-
-        <div class="text-3xl flex items-center">
-            <img alt='Venom' src={venomicon} width='80' height='80' class="self-center me-4"><span class="me-4">Venom</span>
-            <HeartFill width={20} height={20} fill="red" class="me-1" /><HeartFill width={20} height={20} fill="red" class="me-1" /><HeartFill width={20} height={20} fill="red" class="me-1" />
+        <div class="card w-10/12 bg-base-100 shadow-xl p-2">
+            <figure>
+                <img src={spidercardbg}>
+            </figure>
+            <div class="card-body items-center">
+              <h2 class="card-title">Peter Parker!</h2>
+              <button on:click={clickSpidey}><img alt='Spidey' src={spidermanicon} width='100' height='100' class="self-center"></button>
+              <div class="flex mt-3"><HeartFill width={20} height={20} fill="red" class="me-1" /><HeartFill width={20} height={20} fill="red" class="me-1" /><HeartFill width={20} height={20} fill="red" class="me-1" /><HeartFill width={20} height={20} fill="red" class="me-1" /><HeartFill width={20} height={20} fill="red" class="me-1" /></div>
+            </div>
         </div>
-        <div class="text-3xl flex items-center">
-            <img alt='Miles Morales' src={milesicon} width='80' height='80' class="self-center ms-4">
-            <span class="me-4">Miles</span>
-            <HeartFill width={20} height={20} fill="red" class="me-1" /><HeartFill width={20} height={20} fill="red" class="me-1" />
-
+        <div class="card w-10/12 bg-base-100 shadow-xl p-2">
+            <figure>
+                <img alt='Venom' src={venomicon} width='100' height='100' class="self-center">
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Venom</h2>
+              <div class="flex mt-3"><HeartFill width={20} height={20} fill="red" class="me-1" /><HeartFill width={20} height={20} fill="red" class="me-1" /></div>
+            </div>
         </div>
-        <div class="flex place-content-end">
+        <div class="card w-10/12 bg-base-100 shadow-xl p-2">
+            <figure>
+                <button on:click={clickSpidey}><img alt='Miles Morales' src={milesicon} width='100' height='100' class="self-center"></button>
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Miles Morales</h2>
+              <div class="flex mt-3"><HeartFill width={20} height={20} fill="red" class="me-1" /><HeartFill width={20} height={20} fill="red" class="me-1" /></div>
+            </div>
+        </div>
+        <div class="card w-10/12 bg-base-100 shadow-xl p-2">
+            <figure>
+                <button on:click={clickSpidey}><img alt='Miles Morales' src={milesicon} width='100' height='100' class="self-center"></button>
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Miles Morales</h2>
+              <div class="flex mt-3"><HeartFill width={20} height={20} fill="red" class="me-1" /><HeartFill width={20} height={20} fill="red" class="me-1" /></div>
+            </div>
+        </div>
+        <div class="flex place-content-end grid-col-subgrid col-span-4">
             <Swing />        
         </div>
     </div>
