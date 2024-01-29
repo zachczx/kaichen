@@ -10,7 +10,7 @@ import spiderwebbg from '$lib/assets/matthieu-joannon-QoX88h9Pzpw-unsplash_full.
 import spidermanicon from '$lib/assets/83074-spiderman-venom-youtube-symmetry-area-free-hq-image_resized.webp';
 import venomicon from '$lib/assets/pngwing.com_resized.webp';
 import milesicon from '$lib/assets/mileshead_resized.webp';
-import ironmanicon from '$lib/assets/pngegg.webp';
+import ironmanicon from '$lib/assets/icons8-iron-man.webp';
 
 import fruitbackground from "$lib/assets/bruna-branco-7r1HxvVC7AY-unsplash.webp";
 import icecreambackground from "$lib/assets/lama-roscu-Wpg3Qm0zaGk-unsplash.webp";
