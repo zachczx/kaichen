@@ -10,12 +10,16 @@ import spiderwebbg from '$lib/assets/matthieu-joannon-QoX88h9Pzpw-unsplash_full.
 import spidermanicon from '$lib/assets/83074-spiderman-venom-youtube-symmetry-area-free-hq-image_resized.webp';
 import venomicon from '$lib/assets/pngwing.com_resized.webp';
 import milesicon from '$lib/assets/mileshead_resized.webp';
+import ironmanicon from '$lib/assets/pngegg.webp';
 
 import fruitbackground from "$lib/assets/bruna-branco-7r1HxvVC7AY-unsplash.webp";
 import icecreambackground from "$lib/assets/lama-roscu-Wpg3Qm0zaGk-unsplash.webp";
 import noodlebackground from "$lib/assets/pexels-polina-tankilevitch-4518665.webp";
 
 import spidercardbg from "$lib/assets/spider-man.webp";
+import venomcardbg from "$lib/assets/venom-marvels-spiderman-2-4k-wallpaper-uhdpaper.com-731@1@n.webp";
+import milescardbg from "$lib/assets/marvels-spider-man-2-miles-morales-web-shoot-4k-wallpaper-uhdpaper.com-357@1@m.webp";
+import ironmancardbg from "$lib/assets/iron-man-repulsor-uhdpaper.com-4K-8.49.webp";
 
 import Traffic from '../components/Traffic.svelte';
 
@@ -70,10 +74,10 @@ function clickSpidey() {
 </section>
 
 <section style="background-image:url('{spiderwebbg}'); background-size: cover; background-position: 70%;" class="bg-red-500">
-    
-    <div class="hide text-white grid lg:grid-cols-4 content-end justify-items-center px-8 py-5">
-        <div class="grid-cols-subgrid col-span-4">
-        <h1 class="mb-5 flex">Kai loves Spiderman.<span class="text-red-500 flex">
+<div class="hide text-white text-center justify-items-center px-7">
+    <div class="head">
+        <h1 class="mb-5 flex justify-center">Kai loves Spiderman.
+        <span class="text-red-500 flex">
             {#if spiderhead > 0 && spiderhead <= 10}
             x{spiderhead} <span class="self-center ms-2"><HeartFill width={20} height={20} /></span>
             {:else if 10 < spiderhead && spiderhead <= 20 }
@@ -83,49 +87,76 @@ function clickSpidey() {
             {:else if spiderhead > 30}
             x{spiderhead}<span class="flex self-center ms-2"><HeartFill width={20} height={20} /></span><span class="flex self-start"><HeartFill width={20} height={20} /></span><span class="flex self-end"><HeartFill width={30} height={30} /></span><span class="flex self-start"><HeartFill width={40} height={40} /></span><span class="flex self-center ms-2"><HeartFill width={35} height={35} /></span><span class="flex self-start"><HeartFill width={60} height={60} /></span><span class="flex self-end"><HeartFill width={45} height={45}/></span>
             {/if}
-        </span></h1>
-        </div>
-        <div class="card w-10/12 bg-base-100 shadow-xl p-2">
-            <figure>
-                <img src={spidercardbg}>
-            </figure>
-            <div class="card-body items-center">
-              <h2 class="card-title">Peter Parker!</h2>
-              <button on:click={clickSpidey}><img alt='Spidey' src={spidermanicon} width='100' height='100' class="self-center"></button>
-              <div class="flex mt-3"><HeartFill width={20} height={20} fill="red" class="me-1" /><HeartFill width={20} height={20} fill="red" class="me-1" /><HeartFill width={20} height={20} fill="red" class="me-1" /><HeartFill width={20} height={20} fill="red" class="me-1" /><HeartFill width={20} height={20} fill="red" class="me-1" /></div>
+        </span>
+        </h1>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 mx-7">
+        <div class="x">
+            <div class="card bg-base-100 hover:bg-gray-600 shadow-xl">
+                <figure>
+                    <img src={spidercardbg} alt="Spidey">
+                </figure>
+                <div class="card-body items-center  p-2">
+                    <h2 class="card-title">Peter Parker</h2>
+                    <button on:click={clickSpidey}><img alt='Spidey' src={spidermanicon} width='100' height='100' class="self-center"></button>
+                    <div class="flex mt-3">
+                        <HeartFill width={20} height={20} fill="red" class="me-1" />
+                        <HeartFill width={20} height={20} fill="red" class="me-1" />
+                        <HeartFill width={20} height={20} fill="red" class="me-1" />
+                        <HeartFill width={20} height={20} fill="red" class="me-1" />
+                        <HeartFill width={20} height={20} fill="red" class="me-1" />
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="card w-10/12 bg-base-100 shadow-xl p-2">
-            <figure>
+
+        <div class="x">
+            <div class="card bg-base-100 hover:bg-gray-600 shadow-xl">
+                <figure>
+                    <img src={venomcardbg} alt="We are Venom!!">
+                </figure>
+                <div class="card-body items-center p-2">
+                <h2 class="card-title">Venom</h2>
                 <img alt='Venom' src={venomicon} width='100' height='100' class="self-center">
-            </figure>
-            <div class="card-body">
-              <h2 class="card-title">Venom</h2>
-              <div class="flex mt-3"><HeartFill width={20} height={20} fill="red" class="me-1" /><HeartFill width={20} height={20} fill="red" class="me-1" /></div>
+                <div class="flex mt-3"><HeartFill width={20} height={20} fill="red" class="me-1" /><HeartFill width={20} height={20} fill="red" class="me-1" /><HeartFill width={20} height={20} fill="red" class="me-1" /></div>
+                </div>
             </div>
         </div>
-        <div class="card w-10/12 bg-base-100 shadow-xl p-2">
-            <figure>
+
+        <div class="content">
+            <div class="card bg-base-100 hover:bg-gray-600 shadow-xl">
+                <figure>
+                    <img src={milescardbg} alt="The other Spiderman">
+                </figure>
+                <div class="card-body items-center p-2">
+                <h2 class="card-title">Miles Morales</h2>
                 <button on:click={clickSpidey}><img alt='Miles Morales' src={milesicon} width='100' height='100' class="self-center"></button>
-            </figure>
-            <div class="card-body">
-              <h2 class="card-title">Miles Morales</h2>
-              <div class="flex mt-3"><HeartFill width={20} height={20} fill="red" class="me-1" /><HeartFill width={20} height={20} fill="red" class="me-1" /></div>
+                <div class="flex mt-3"><HeartFill width={20} height={20} fill="red" class="me-1" /><HeartFill width={20} height={20} fill="red" class="me-1" /></div>
+                </div>
             </div>
         </div>
-        <div class="card w-10/12 bg-base-100 shadow-xl p-2">
-            <figure>
-                <button on:click={clickSpidey}><img alt='Miles Morales' src={milesicon} width='100' height='100' class="self-center"></button>
-            </figure>
-            <div class="card-body">
-              <h2 class="card-title">Miles Morales</h2>
-              <div class="flex mt-3"><HeartFill width={20} height={20} fill="red" class="me-1" /><HeartFill width={20} height={20} fill="red" class="me-1" /></div>
+
+        <div class="content">
+            <div class="card bg-base-100 hover:bg-gray-600 shadow-xl">
+                <figure>
+                    <img src={ironmancardbg} alt="Ironman">
+                </figure>
+                <div class="card-body items-center p-2">
+                    <h2 class="card-title">Ironman</h2>
+                    <!-- https://icons8.com/icon/hh2TaDhN_QBl/iron-man alternate-->
+                    <img src={ironmanicon} alt="I am Ironman" width="100" height="100">
+                    <div class="flex mt-3"><HeartFill width={20} height={20} fill="red" class="me-1" /></div>
+                </div>
             </div>
-        </div>
-        <div class="flex place-content-end grid-col-subgrid col-span-4">
-            <Swing />        
         </div>
     </div>
+    
+    <div class="flex place-content-end">
+        <Swing />        
+    </div>
+
+</div>
 </section>
     
 <section style="background-image:url('{toycars}'); background-position: 90% 10%; background-size: cover;">
