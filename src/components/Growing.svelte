@@ -1,5 +1,5 @@
 <script>
-let birthday = new Date("Feb 1, 2024 00:00:00").getTime()
+let birthday = new Date("Feb 1, 2025 00:00:00").getTime()
 let days, hours, minutes, seconds
 let x = setInterval(() => {
     let now = new Date().getTime()
