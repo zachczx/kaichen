@@ -26,7 +26,7 @@ let x = setInterval(() => {
             <path d="M12 3a2 2 0 0 0 0 4" />
         </svg>
 </div>
-<h1 class="mb-8">Hello! <!--<span class="underline decoration-red-300 underline-offset-3">Kai's</span> a toddler.--> <span class="bg-gradient-to-r from-yellow-200 via-green-200 to-pink-300 text-transparent bg-clip-text">Kai's birthday is coming!</span></h1>
+<h1 class="mb-8">Hello! <!--<span class="underline decoration-red-300 underline-offset-3">Kai's</span> a toddler.--> <span class="bg-gradient-to-r from-yellow-200 via-green-200 to-pink-300 text-transparent bg-clip-text">Kai's a kid. Counting down to his birthday:</span></h1>
 
 <div class="grid lg:grid-cols-4 sm:grid-cols-3 gap-2">
     <div class="card w-40 bg-base-100 hover:bg-red-500 shadow-xl">
